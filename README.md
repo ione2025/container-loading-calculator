@@ -2,6 +2,51 @@
 
 A modern web application for calculating and visualizing container loading capacity with real-time CBM (Cubic Meter) calculations and interactive 3D visualization.
 
+## 🚀 Quick Start - Preview the App
+
+Want to see the app in action? Follow these simple steps:
+
+### Option 1: Run Development Server (Recommended for Development)
+```bash
+# 1. Install dependencies (first time only)
+npm install
+
+# 2. Start the development server
+npm run dev
+
+# 3. Open your browser and visit:
+#    👉 http://localhost:3000
+```
+
+### Option 2: Preview Production Build
+```bash
+# 1. Install dependencies (first time only)
+npm install
+
+# 2. Build the application
+npm run build
+
+# 3. Preview the production build
+npm run preview
+
+# 4. Open your browser and visit:
+#    👉 http://localhost:4173 (default Vite preview port)
+```
+
+📘 **For detailed preview instructions, troubleshooting, and tips, see [PREVIEW.md](PREVIEW.md)**
+
+### 🎥 What to Expect
+
+Once the app loads, you'll see:
+- 🏗️ **Container Selector** - Choose from 4 standard container sizes
+- 📝 **Product Form** - Add products with dimensions, weight, and quantity
+- 📊 **Real-time CBM Summary** - See used/available space instantly
+- 🎨 **3D Visualization** - Interactive container view with your products
+- 🤖 **Auto Fill** - Calculate max quantity with one click
+
+![Container Loading Calculator Preview](https://github.com/user-attachments/assets/42092474-6953-458e-8983-2192ea9bb8f5)
+*The app interface showing container selector, loading summary, product form, and 3D visualization*
+
 ## Features
 
 ✨ **Key Features:**
@@ -119,6 +164,34 @@ container-loading-calculator/
 ## Contributing
 
 If you wish to contribute to the project, please fork the repository and submit a pull request with your changes.
+
+## Troubleshooting
+
+### Port Already in Use
+If you see an error like `Port 3000 is already in use`, either:
+- Stop the other application using that port
+- Or Vite will automatically use the next available port (check the terminal output)
+
+### Build Issues
+If you encounter build errors:
+```bash
+# Clear node_modules and reinstall
+rm -rf node_modules package-lock.json
+npm install
+
+# Try building again
+npm run build
+```
+
+### 3D Visualization Not Loading
+If the 3D container view is blank:
+- Ensure you're using a modern browser (Chrome, Firefox, Safari, Edge)
+- Check browser console for WebGL errors
+- Make sure hardware acceleration is enabled in your browser
+
+### Need Help?
+- Check the [Issues](https://github.com/ione2025/container-loading-calculator/issues) page
+- Create a new issue with details about your problem
 
 ## License
 
