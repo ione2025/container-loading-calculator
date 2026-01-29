@@ -1,4 +1,3 @@
-import React from 'react';
 import ContainerSelector from './components/ContainerSelector';
 import ProductForm from './components/ProductForm';
 import ProductList from './components/ProductList';

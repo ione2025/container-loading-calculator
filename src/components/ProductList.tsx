@@ -1,4 +1,3 @@
-import React from 'react';
 import { useLoadingStore } from '../store/loadingStore';
 
 const ProductList: React.FC = () => {
